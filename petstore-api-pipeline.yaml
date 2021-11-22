@@ -197,8 +197,8 @@ Resources:
         Location: !Join
         - ''
         - - 'https://github.com/'
-          - !Ref GitHubUser
-          - '/'
+          # - !Ref GitHubUser
+          # - '/'
           - !Ref GitHubRepositoryName
         Type:  GITHUB
         BuildSpec: 01api/petstore-api-buildspec.yml
@@ -236,8 +236,8 @@ Resources:
         Location: !Join
           - ''
           - - 'https://github.com/'
-            - !Ref GitHubUser
-            - '/'
+            # - !Ref GitHubUser
+            # - '/'
             - !Ref GitHubRepositoryName
         Type:  GITHUB
         BuildSpec: 03codebuild/postman-newman-buildspec.yml
